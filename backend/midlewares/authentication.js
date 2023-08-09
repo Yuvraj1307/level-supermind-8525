@@ -10,7 +10,7 @@ const auth=(req,res,next)=>{
     return res.status(404).send({ msg: "please login first" });
   }
 
-  jwt.verify(token, process.env.secret_key, function (err, decoded) {
+  jwt.verify(token, "secret", function (err, decoded) {
     if (err) {
       return res.status(404).send({ msg: "please login again" });
     } else {
