@@ -55,8 +55,8 @@ app.delete("/post",async(req,res)=>{
 
 
 seq.sync().then(()=>{
-    app.listen(process.env.PORT,()=>{
-                console.log(`connected at port ${process.env.PORT}`);
+    app.listen(3006,()=>{
+                console.log(`connected at port 3006`);
         
     })
 })
