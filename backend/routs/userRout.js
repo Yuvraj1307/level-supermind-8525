@@ -65,7 +65,7 @@ userRouter.post("/login", async (req, res) => {
 
           var token = jwt.sign(
             {userID:user.dataValues.id, email: user.dataValues.email },
-            process.env.secret_key,
+           "secret",
             { expiresIn: "2h" }
           );
           console.log(token);
