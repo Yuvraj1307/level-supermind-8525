@@ -1,5 +1,8 @@
 # level-supermind-8525
 
+# Depoyed URL 
+http://levelsupermindbucket.s3-website-us-west-2.amazonaws.com/
+
 # Public URL of the deployed application on AWS EC2
 http://34.219.117.41:3006/
 
